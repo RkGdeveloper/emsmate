@@ -1,4 +1,5 @@
 package com.cg.ems.dtos;
+
 public class DesignationBean {
 
 	

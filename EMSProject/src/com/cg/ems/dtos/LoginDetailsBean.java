@@ -1,11 +1,28 @@
 package com.cg.ems.dtos;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="login_details")
 public class LoginDetailsBean {
 
+	@Id
+	@Column(name="login_id")
 	private int loginId;
+	
+	@Column(name="login_username")
 	private String userName;
+	
+	@Column(name="login_password")
 	private String password;
+	
+	@Column(name="login_role")
 	private String role;
+	
+	@Column(name="emp_id_ref")
 	private int empId;
 	
 	public LoginDetailsBean() {
